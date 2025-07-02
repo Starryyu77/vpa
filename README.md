@@ -17,16 +17,14 @@
   ```bash
   conda --version
 
-2. 创建 Conda 环境
+###2. 创建 Conda 环境
 
 创建名为 vqa_env 的环境，使用 Python 3.8：conda create -n vqa_env python=3.8
-
 
 激活环境：source /opt/miniconda3/bin/activate vqa_env
 
 
-
-3. 安装依赖
+###3. 安装依赖
 
 安装所需 Python 包：pip install dashscope pillow
 
@@ -35,7 +33,7 @@
 
 应显示 dashscope 和 pillow。
 
-4. 配置 DashScope API 密钥
+###4. 配置 DashScope API 密钥
 
 获取 API 密钥：
 注册/登录 Model Studio。
@@ -55,8 +53,7 @@
 验证：echo $DASHSCOPE_API_KEY
 
 
-
-5. 准备图片
+###5. 准备图片
 
 将两张包含车辆的图片（例如 image1.jpg 和 image2.jpg）放入：/Users/starryyu/Documents/tinghuasummer/vpa/image_input/
 
@@ -67,7 +64,6 @@
 
 如果文件名不同，在 vqa_script.py 中更新路径：image_path1 = os.path.join(image_dir, "your_image1.jpg")
 image_path2 = os.path.join(image_dir, "your_image2.jpg")
-
 
 
 运行脚本
